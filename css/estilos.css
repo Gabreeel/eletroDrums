@@ -1,8 +1,8 @@
 :root {
-  --cinza: #2D46B9;
-  --vermelha: #F037A5;
-  --vermelha-escura: #ff007781;
-  --branca: #3E00FF;
+  --azul-escuro: #2D46B9;
+  --rosa: #F037A5;
+  --rosa-escura: #ff007781;
+  --roxo: #3E00FF;
   --luz: rgb(229, 255, 0);
 }
 
@@ -12,12 +12,12 @@ body {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Electrolize', sans-serif;
   min-height: 100vh;
 }
 
 h1 {
-  color: var(--vermelha);
+  color: var(--rosa);
   margin-bottom: 20px;
   font-size: 2rem;
 }
@@ -33,10 +33,10 @@ h1 {
 }
 
 .tecla {
-  background-color: var(--branca);
+  background-color: var(--roxo);
   border-radius: 30px;
-  box-shadow: 3px 3px 0 var(--cinza);
-  color: var(--vermelha);
+  box-shadow: 3px 3px 0 var(--azul-escuro);
+  color: var(--rosa);
   cursor: pointer;
   height: 120px;
   font-size: 1.75em;
@@ -48,10 +48,10 @@ h1 {
 
 .tecla.ativa,
 .tecla:active {
-  background-color: var(--vermelha);
-  border: 4px solid  var(--vermelha);
-  box-shadow: 3px 3px 0 var(--vermelha-escura) inset;
-  color: var(--branca);
+  background-color: var(--rosa);
+  border: 4px solid  var(--rosa);
+  box-shadow: 3px 3px 0 var(--rosa-escura) inset;
+  color: var(--roxo);
   outline: none;
 }
 
@@ -63,5 +63,5 @@ h1 {
 
 .tecla.active:focus,
 .tecla:active:focus {
-  box-shadow: 3px 3px 0 var(--vermelha-escura) inset, 1px 1px 10px var(--luz);
+  box-shadow: 3px 3px 0 var(--rosa-escura) inset, 1px 1px 10px var(--luz);
 }
